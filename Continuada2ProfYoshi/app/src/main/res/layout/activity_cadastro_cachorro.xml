@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroCachorro">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_cad_cachorro"
+        android:layout_marginTop="20dp">
+
+<EditText
+    android:layout_width="220dp"
+    android:layout_height="50dp"
+    android:hint="Raça: "
+    android:id="@+id/et_raca"
+    />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:hint="Preço Médio: "
+            android:id="@+id/et_preco_medio"
+            android:inputType="numberDecimal"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sw_checado"
+            android:text="Se da bem com Crianças ? "
+            android:checked="false">
+        </Switch>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Cachorro"
+            android:onClick="cadastrarCacchorro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_msg"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/sw_checado"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cachorro_feliz"
+            android:src="@drawable/akamaru"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
